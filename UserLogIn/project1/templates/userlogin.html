@@ -1,10 +1,11 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>kishore</title>
-    <link rel="stylesheet" href="../static/css/userlogin.css">
+    <link rel="stylesheet" href="{% static 'css/userlogin.css' %}">
 </head>
 <body>
     <div id="Container">
@@ -12,16 +13,17 @@
 
         <form>
             <label>Name</label><br><br>
-            <input type="text" name="name" placeholder="Enter Name"><br><br>
+            <input type="text" placeholder="Enter Name"><br><br>
             <label>Email</label><br><br>
-            <input type="email" name="email" placeholder="Email"><br><br>
+            <input type="email" placeholder="Email"><br><br>
             <label>Password</label><br><br>
-            <input type="password" name="password" placeholder="password"><br><br>
+            <input type="password" placeholder="password"><br><br>
+            
         </form>
 
         <div id="allbutton">
             <button class="button">Login</button><br>
-            <a href="RegisterPage.html" target="_blank">
+            <a href="register" target="_blank">
                 <button class="button">Register</button>
             </a>
             
